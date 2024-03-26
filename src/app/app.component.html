@@ -1,16 +1,20 @@
-<canvas #canvas
-            width="500"
-            height="300"
-            style="border: 1px solid black;"
-            (mousemove)="onMouseMove($event)"
-            (mousedown)="isDrawing = true"
-            (mouseup)="isDrawing = false"
-            (mouseleave)="isDrawing = false">
 
-           
-    </canvas>
- <button (click)="clearCanvas()">Clear Canvas</button>
-    <button (click)="downloadSign()">Download Sign</button>
+<div class="dark:bg-[#080c13] dark:text-white h-[100vh]">
+    <nav class="flex w-full justify-between items-center py-6 px-14 max-sm:px-0">
+    <div>
+
+       <img src="../../assets/signify-high-resolution-logo-transparent.png" class="w-[140px] max-sm:w-[100px]" *ngIf="!darkmode()" />
+       <img src="../../assets/signify-high-resolution-logo-white-transparent.png" class="w-[140px] max-sm:w-[100px] opacity-85" *ngIf="darkmode()" />
+    </div>
+    <div class="flex items-center">
+       <span (click)="darkmode.set(!darkmode())" class="mb-0.5">
+             <i class="fa-solid fa-sun text-[22px] opacity-75 hover:opacity-100 transition-opacity text-[#000] dark:text-[#fff] cursor-pointer" *ngIf="darkmode()"></i>
+             <i class="fa-solid fa-moon text-[22px] opacity-75 hover:opacity-100 transition-opacity text-[#000] dark:text-[#fff] cursor-pointer" *ngIf="!darkmode()"></i>
+       </span>
+    </div>
+   </nav>
+<app-signcanvas [darkModeSignal]="darkmode"></app-signcanvas>
 
 
 <router-outlet></router-outlet>
+</div>
