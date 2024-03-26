@@ -9,7 +9,8 @@ import { fabric } from 'fabric';
 export class SigncanvasComponent implements OnInit {
   @Input() darkModeSignal!: Signal<boolean>;
   canvas!: fabric.Canvas;
-  brushColor = 'black';
+  brushColor:string = '#000000';
+  brushSize:number = 4
 
   ngOnInit() {
     this.canvas = new fabric.Canvas('canvas', {
@@ -19,18 +20,24 @@ export class SigncanvasComponent implements OnInit {
    
     this.canvas.freeDrawingBrush.width = 4;
     this.canvas.isDrawingMode = true;
-    const isDarkMode = this.darkModeSignal()
-
-    this.updateBrushColor(isDarkMode);
     
-    // Listen for changes in dark mode signal
+
+    this.updateBrushColor();
+    
+    
     
    }
 
-   updateBrushColor(isDarkMode: boolean) {
-    this.brushColor = isDarkMode ? 'white' : 'black';
+   updateBrushColor() {
+    
     if (this.canvas) {
       this.canvas.freeDrawingBrush.color = this.brushColor;
+    }
+  }
+
+  updateBrushSize(){
+    if (this.canvas) {
+      this.canvas.freeDrawingBrush.width = this.brushSize;
     }
   }
 
