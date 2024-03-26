@@ -11,6 +11,7 @@ export class SigncanvasComponent implements OnInit {
   canvas!: fabric.Canvas;
   brushColor:string = '#000000';
   brushSize:number = 4
+  backgroundColor:string = '#ffffff';
 
   ngOnInit() {
     this.canvas = new fabric.Canvas('canvas', {
@@ -23,7 +24,7 @@ export class SigncanvasComponent implements OnInit {
     
 
     this.updateBrushColor();
-    
+    this.updateBrushSize()
     
     
    }
@@ -38,6 +39,12 @@ export class SigncanvasComponent implements OnInit {
   updateBrushSize(){
     if (this.canvas) {
       this.canvas.freeDrawingBrush.width = this.brushSize;
+    }
+  }
+
+  updateBackgroundColor(){
+    if (this.canvas) {
+      this.canvas.backgroundColor = this.backgroundColor;
     }
   }
 
