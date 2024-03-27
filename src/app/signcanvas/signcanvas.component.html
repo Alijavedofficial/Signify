@@ -18,10 +18,11 @@
     <canvas width="630" height="300" id="canvas" class="border-2 border-black items-center dark:border-white"></canvas>
     </div>
 
-        <div class="grid grid-cols-3 gap-5 justify-between items-center">
-        <button class="p-3 px-11 bg-black text-white dark:bg-[#080c13]  dark:border-white border-2 dark:text-white" (click)="clearCanvas()">Clear Canvas</button>
-        <button class="p-3 px-11 bg-black text-white dark:bg-[#080c13]  dark:border-white border-2 dark:text-white" (click)="downloadSign()">Download Sign</button>
-        <button class="p-3 px-11 bg-black text-white dark:bg-[#080c13]  dark:border-white border-2 dark:text-white" (click)="toggleEdit()">Edit Mode</button>
+        <div class="grid grid-cols-4 gap-3 justify-between items-center">
+        <button class="p-3 px-5 bg-black text-white dark:bg-[#080c13]  dark:border-white border-2 dark:text-white" (click)="clearCanvas()">Clear Canvas</button>
+        <button class="p-3 px-5 bg-black text-white dark:bg-[#080c13]  dark:border-white border-2 dark:text-white" (click)="downloadSign()">Download Sign</button>
+        <button class="p-3 px-5 bg-black text-white dark:bg-[#080c13]  dark:border-white border-2 dark:text-white" (click)="eraserMode()">Eraser</button>
+        <button class="p-3 px-5 bg-black text-white dark:bg-[#080c13]  dark:border-white border-2 dark:text-white" (click)="editMode()">Edit Mode</button>
        </div>
 
     </div>
