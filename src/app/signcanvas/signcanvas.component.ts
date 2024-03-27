@@ -12,11 +12,11 @@ export class SigncanvasComponent implements OnInit {
   brushColor:string = '#000000';
   brushSize:number = 4
   backgroundColor:string = '#ffffff';
+  isEraserMode:boolean = false
 
   ngOnInit() {
     this.canvas = new fabric.Canvas('canvas', {
-      width: 800,
-      height: 400,
+
     });
    
     this.canvas.freeDrawingBrush.width = 4;
@@ -25,7 +25,7 @@ export class SigncanvasComponent implements OnInit {
 
     this.updateBrushColor();
     this.updateBrushSize()
-    
+    this.updateBackgroundColor()
     
    }
 
@@ -52,8 +52,22 @@ export class SigncanvasComponent implements OnInit {
     if (this.canvas) {
        this.canvas.clear();
     }
+    this.updateBackgroundColor()
    }
    
+
+   toggleEdit() {
+    this.isEraserMode = !this.isEraserMode;
+    if (this.isEraserMode) {
+      // Set eraser mode
+      this.canvas.isDrawingMode = false;
+      this.canvas.freeDrawingBrush.color = 'white'; // Set color to match canvas background
+    } else {
+      // Set drawing mode
+      this.canvas.isDrawingMode = true;
+      this.canvas.freeDrawingBrush.color = 'black'; // Set back to default drawing color
+    }
+  }
 
    downloadSign() {
  
@@ -66,6 +80,8 @@ export class SigncanvasComponent implements OnInit {
     document.body.removeChild(a);
  
 }
+
+
 
 
    

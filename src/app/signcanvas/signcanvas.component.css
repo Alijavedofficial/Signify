@@ -1,0 +1,18 @@
+input{
+    border: 2px solid #dfe1e6;
+    width: 100%;
+    padding: 9px;
+    background-color: #fff;
+    font-weight: 400;
+    box-shadow: 0 0 6px #172b4d0a;
+    font-size: 0.95rem;
+    outline: none;
+    
+}
+input:focus{
+  border: 1px solid #0f172a;
+}
+input[type = "color"] {
+    padding: 20px;
+}
+
