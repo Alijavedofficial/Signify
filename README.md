@@ -1,27 +1,35 @@
-# Signmaker
+# Sign Maker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+## Overview
 
-## Development server
+The Sign Maker is a web application built with Angular and Fabric.js that allows users to create, edit, and download custom signs on a canvas.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![Sign Maker Demo](demo.gif)
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Drawing**: Users can draw freehand on the canvas using various brush sizes and colors.
+- **Editing**: The application supports undo and redo functionality for editing the sign.
+- **Eraser**: Users can switch to an eraser mode to erase parts of the sign.
+- **Clear Canvas**: Users can clear the canvas to start afresh.
+- **Background Color**: Users can choose the background color of the canvas.
+- **Download**: Once satisfied with the sign, users can download it as an image (PNG).
 
-## Build
+## Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular: Angular is a popular TypeScript-based web application framework used for building single-page applications.
+- Fabric.js: Fabric.js is a powerful and easy-to-use JavaScript canvas library that provides an interactive object model for working with canvas elements.
 
-## Running unit tests
+## Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Prerequisites
 
-## Running end-to-end tests
+- Node.js and npm installed on your machine.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Steps
 
-## Further help
+1. **Clone the repository:**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```bash
+   git clone https://github.com/your-username/sign-maker.git
+
