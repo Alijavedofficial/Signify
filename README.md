@@ -26,10 +26,5 @@ The Sign Maker is a web application built with Angular and Fabric.js that allows
 
 - Node.js and npm installed on your machine.
 
-### Steps
 
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/your-username/sign-maker.git
 
