@@ -20,7 +20,6 @@ The Sign Maker is a web application built with Angular and Fabric.js that allows
 - Angular: Angular is a popular TypeScript-based web application framework used for building single-page applications.
 - Fabric.js: Fabric.js is a powerful and easy-to-use JavaScript canvas library that provides an interactive object model for working with canvas elements.
 
-## Installation
 
 
 
