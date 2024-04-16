@@ -11,12 +11,12 @@ export class SigncanvasComponent implements OnInit {
   canvas!: fabric.Canvas;
   brushColor:string = '#000000';
   brushSize:number = 4
-  backgroundColor:string = '#ffffff';
+  backgroundColor:string = '#fff';
   isEraserMode:boolean = false
 
   ngOnInit() {
     this.canvas = new fabric.Canvas('canvas', {
-    
+    backgroundColor: this.backgroundColor
     });
    
     this.canvas.freeDrawingBrush.width = 4;
@@ -89,7 +89,7 @@ editMode() {
  
 }
 
-
+ 
 
 
    
