@@ -1,7 +1,7 @@
 # Signify
 
 ## Overview
-Signify is a web application built with Angular and Fabric.js that allows users to create, edit, and download custom signs on a canvas.
+Signify is an application built with Angular and Fabric.js that allows users to create, edit, and download custom signs on a canvas.
 
 ![Sign Maker Demo](demo.gif)
 
