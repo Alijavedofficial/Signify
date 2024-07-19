@@ -19,7 +19,7 @@ Signify is an application built with Angular and Fabric.js that allows users to 
 - Angular: Angular is a popular TypeScript-based web application framework used for building single-page applications.
 - Fabric.js: Fabric.js is a powerful and easy-to-use JavaScript canvas library that provides an interactive object model for working with canvas elements.
 
-## Video
+## 📹 Video Demonstration
 https://github.com/user-attachments/assets/a81d8de8-fee9-4aac-827d-152004b81f6e
 
 
